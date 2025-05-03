@@ -1,5 +1,17 @@
+import os
+import subprocess
+import sys
+
+# Check if TensorFlow is installed, and if not, install it
+try:
+    import tensorflow as tf
+    print("TensorFlow is already installed")
+except ImportError:
+    print("TensorFlow not found. Installing...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "tensorflow"])
+    import tensorflow as tf
+
 import streamlit as st
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 from PIL import Image, UnidentifiedImageError
 import numpy as np
@@ -8,7 +20,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import base64
 import io
-import os
 import time
 from datetime import datetime
 
@@ -17,7 +28,7 @@ import cv2
 import random
 
 # ---------------------------- CONFIGURATION ----------------------------
-openai.api_key = "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"
+openai.api_key = "your-openai-api-key"
 
 st.set_page_config(page_title="🧠 AI Powered Product Analysis Dashboard", layout="wide")
 

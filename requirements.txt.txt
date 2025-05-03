@@ -1,0 +1,7 @@
+streamlit
+tensorflow
+Pillow
+openai
+matplotlib
+seaborn
+cv2

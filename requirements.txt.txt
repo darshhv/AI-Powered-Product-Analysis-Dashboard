@@ -1,7 +1,10 @@
 streamlit
 tensorflow
-Pillow
-openai
+numpy
+pandas
 matplotlib
-seaborn
-cv2
+Pillow
+scikit-learn
+requests
+openai
+transformers

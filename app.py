@@ -1,17 +1,5 @@
-import os
-import subprocess
-import sys
-
-# Check if TensorFlow is installed, and if not, install it
-try:
-    import tensorflow as tf
-    print("TensorFlow is already installed")
-except ImportError:
-    print("TensorFlow not found. Installing...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "tensorflow"])
-    import tensorflow as tf
-
 import streamlit as st
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 from PIL import Image, UnidentifiedImageError
 import numpy as np
@@ -20,6 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import base64
 import io
+import os
 import time
 from datetime import datetime
 

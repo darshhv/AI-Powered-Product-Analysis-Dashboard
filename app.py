@@ -28,7 +28,7 @@ import cv2
 import random
 
 # ---------------------------- CONFIGURATION ----------------------------
-openai.api_key = "your-openai-api-key"
+openai.api_key = "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"
 
 st.set_page_config(page_title="🧠 AI Powered Product Analysis Dashboard", layout="wide")
 

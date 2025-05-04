@@ -49,10 +49,10 @@ def load_all_models():
 
         # Mapping of model names to Google Drive file IDs
         model_files = {
-            "MasterCategories_model.keras": "19JTau3vko39Bs8fDDEUlA7VGri1p-9Gk"
-            "Subtypes_model.keras": "1s7A7S5bjm4toSCZNhkTcG8w7J6OrHvQ-"
-            "MorphologicalFeatures_model.keras": "1v63XBBN6H11p0ZcbTVbpFegD7SOsvHE4"
-            "FunctionalFactors_model.keras": "1NfqRYKlTMDpEOgQ_vij8YCNfRN6UO4qU"
+            "MasterCategories_model.keras": "19JTau3vko39Bs8fDDEUlA7VGri1p-9Gk",
+            "Subtypes_model.keras": "1s7A7S5bjm4toSCZNhkTcG8w7J6OrHvQ-",
+            "MorphologicalFeatures_model.keras": "1v63XBBN6H11p0ZcbTVbpFegD7SOsvHE4",
+            "FunctionalFactors_model.keras": "1NfqRYKlTMDpEOgQ_vij8YCNfRN6UO4qU",
             "RealWorldUsage_model.keras": "1-kSSr7QwCzwP0Djbf8adxQpnHH58qaWU"  
         }
 

@@ -1,5 +1,8 @@
-AI-Powered Product Analysis Dashboard for Bottle Classification and Functional Evaluation
+AI-Powered Product Analysis Dashboard
+
+
 Overview
+
 The AI-Powered Product Analysis Dashboard is a cutting-edge, interactive web-based tool developed to classify and evaluate bottles based on their visual and functional features. The project leverages machine learning and advanced image processing techniques to predict key attributes of bottles, including:
 
 Master Categories: Classifies bottles into different product categories like beverage, cosmetic, household, medical, etc.
@@ -70,7 +73,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/<your-username>/AI-Powered-Product-Analysis-Dashboard.git
+git clone https://github.com/<darshhv>/AI-Powered-Product-Analysis-Dashboard.git
 cd AI-Powered-Product-Analysis-Dashboard
 Install dependencies:
 
@@ -91,4 +94,4 @@ License
 This project is licensed under the MIT License.
 
 Acknowledgements
-Special thanks to Dr. Rajath Desai and Mr. Puneet K for their invaluable guidance during my internship at the Indian Institute of Science (IISc). Without their mentorship, this project wouldn't have been possible.
+Special thanks to Dr. Rajath Desai and Mr. Puneet K for their invaluable guidance during my internship at the Indian Institute of Science (IISc) - Bengaluru.

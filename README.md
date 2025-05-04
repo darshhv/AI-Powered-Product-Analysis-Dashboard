@@ -1,4 +1,4 @@
-AI-Powered Product Analysis Dashboard 
+                                                                                                    #AI-Powered Product Analysis Dashboard 
 Overview
 Welcome to the AI-Powered Product Analysis Dashboard — an advanced tool designed for high-precision classification, analysis, and real-time insights on product designs, particularly for bottles. This sophisticated application combines the latest developments in Deep Learning, Computer Vision, and Natural Language Processing (NLP) to offer comprehensive analysis on a variety of bottle characteristics.
 

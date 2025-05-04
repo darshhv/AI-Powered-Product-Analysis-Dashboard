@@ -1,234 +1,94 @@
-AI-Powered Product Analysis Dashboard 
-
+AI-Powered Product Analysis Dashboard for Bottle Classification and Functional Evaluation
 Overview
-Welcome to the AI-Powered Product Analysis Dashboard — an advanced tool designed for high-precision classification, analysis, and real-time insights on product designs, particularly for bottles. This sophisticated application combines the latest developments in Deep Learning, Computer Vision, and Natural Language Processing (NLP) to offer comprehensive analysis on a variety of bottle characteristics.
+The AI-Powered Product Analysis Dashboard is a cutting-edge, interactive web-based tool developed to classify and evaluate bottles based on their visual and functional features. The project leverages machine learning and advanced image processing techniques to predict key attributes of bottles, including:
 
-This system empowers users — from designers and engineers to business analysts and researchers — to make data-driven decisions in real-time, with an AI assistant that delivers predictive insights, visual comparisons, and automated report generation.
+Master Categories: Classifies bottles into different product categories like beverage, cosmetic, household, medical, etc.
 
-Whether you're assessing packaging design for manufacturing, evaluating sustainability features, or simply categorizing different bottle types, this dashboard provides a robust, scalable solution for professional environments.
+Subtypes: Identifies the specific type of bottle such as plastic, glass, spray, or pump dispensers.
 
-Table of Contents
-Introduction
+Morphological Features: Analyzes the shape and size of the bottle (e.g., tall, short, wide, slim, etc.).
 
-Key Features
+Functional Factors: Assesses performance traits such as thermal insulation, durability, hygiene design, chemical safety, and ergonomics.
 
-Technology Stack
+Real World Usage Traits: Evaluates practical usage features like user-friendliness, eco-friendliness, reusability, affordability, and premium-grade standards.
 
-Getting Started
-
-User Guide
-
-Model Training
-
-Architecture
-
-Folder Structure
-
-Contribution
-
-License
-
-Acknowledgements
-
-Contact Information
-
-Introduction
-This product analysis tool leverages cutting-edge AI technologies to offer a comprehensive solution for bottle image classification and analysis. With integrated functionalities for classification, comparison, interactive querying via a chatbot, and report generation, this system provides an intuitive and automated method for evaluating bottle designs based on key features like:
-
-Thermal Insulation Efficiency
-
-Leak-Proof Design
-
-Durability & Impact Resistance
-
-Chemical Leaching & Safety
-
-Ergonomics & Handling Comfort
-
-These functional factors, along with other visual and morphological data, help provide actionable insights into the bottle's performance, suitability, and market potential.
+This tool not only provides detailed bottle analysis but also offers expert insights through an integrated AI Assistant based on the ChatGPT model. Users can interact with the assistant to get personalized suggestions and recommendations for product design improvements and usage optimization.
 
 Key Features
-1. Advanced Bottle Classification
-Classify bottles across a wide range of categories, including:
+Multi-Model Analysis: Utilizes separate Convolutional Neural Networks (CNN) models for each classification category (master category, subtype, morphological features, etc.).
 
-Master Categories: Beverage, Cosmetic, Household, Specialty, etc.
+Dynamic Visual Feedback: Provides confidence scores for each prediction along with bar charts for visual representation of the classification.
 
-Subtypes: Plastic, Glass, Aluminum, etc.
+Side-by-Side Bottle Comparison: Allows users to upload two bottles for comparative analysis on various attributes.
 
-Morphological Features: Tall, Slim, Bulbous, etc.
+Interactive AI Assistant: Offers expert advice on product design, functionalities, and improvements.
 
-Functional Factors: Insulation, Durability, Leak-Proof Design, etc.
+User-Friendly Interface: Built with Streamlit for easy interaction and accessibility.
 
-Real-World Usage: Eco-friendly, Reusable, Single-use, etc.
+Feedback Form: Allows users to provide feedback to continuously improve the dashboard.
 
-Each prediction includes confidence scoring and can be visualized with easy-to-read bar charts.
+Project Background
+This project was developed during my internship at the Indian Institute of Science (IISc), under the guidance of Dr. Rajath Desai and Mr. Puneet K. The goal was to create an AI-driven solution that can analyze the various factors affecting bottle design and functionality, based on image recognition and machine learning.
 
-2. AI-Powered Product Comparison
-Compare two bottles side by side for all predicted attributes, providing a clear, comparative analysis. Ideal for evaluating the differences and making informed design decisions.
+How It Works
+Upload an Image: Users upload a bottle image via the dashboard.
 
-3. Interactive AI Assistant
-The integrated AI Assistant, powered by OpenAI's GPT-3.5, provides in-depth analysis, recommendations, and expert insights based on the uploaded bottle image. Ask specific questions about the bottle, and get natural language responses from the AI.
+Model Predictions: The backend models process the image and generate predictions on:
 
-4. Confidence Scores and Visualizations
-The application provides not only predictions but also confidence levels for each attribute, helping users assess the reliability of the model's analysis. These scores are visualized through interactive charts, enhancing interpretability.
+The master category of the bottle.
 
-5. Downloadable Reports
-Generate PDF reports based on the predictions and analysis, which include all of the classification details, confidence levels, and functional assessments. These reports can be shared with stakeholders or used for documentation purposes.
+The subtype of the bottle.
 
-6. Scalable and Real-Time Predictions
-The tool is designed for real-time predictions, enabling businesses to analyze product images quickly and efficiently. Whether you're handling a single bottle or a large batch, the system scales to meet the demand.
+Morphological features and functional factors.
 
-Technology Stack
-This project utilizes a combination of advanced tools and libraries from the fields of AI, Machine Learning, and Web Development:
+Real-world usage traits.
 
-Deep Learning Framework:
+Display Results: The results are displayed on the dashboard, with visualizations of the confidence scores and detailed analysis.
 
-TensorFlow & Keras: For building and deploying Convolutional Neural Networks (CNN) models that perform high-accuracy image classification.
+AI Assistant Interaction: Users can ask the AI Assistant for insights and suggestions regarding the bottle.
 
-Natural Language Processing (NLP):
+Technologies Used
+Python: Primary programming language for development.
 
-OpenAI GPT-3.5: For generating dynamic, intelligent responses to product-related queries, providing the AI-powered assistant functionality.
+TensorFlow & Keras: For building and deploying the machine learning models.
 
-Web Framework:
+Streamlit: For creating an interactive web application.
 
-Streamlit: An open-source framework that enables rapid deployment of machine learning tools with minimal effort, creating a rich, interactive dashboard for users.
+OpenAI GPT-3.5 Turbo: For generating responses in the AI Assistant.
 
-Data Handling and Image Processing:
+gdown: To download pretrained models directly from Google Drive.
 
-NumPy, Pandas: For managing and manipulating data.
+Pillow: For image manipulation and preprocessing.
 
-OpenCV, Pillow (PIL): For image preprocessing, enhancement, and transformation.
+Matplotlib & Seaborn: For data visualization.
 
-Visualization:
+Installation
+To run the AI-Powered Product Analysis Dashboard locally:
 
-Matplotlib, Seaborn: For creating compelling visualizations of model predictions, confidence scores, and comparative analysis.
-
-Cloud and Deployment:
-
-gdown: For downloading pre-trained models directly from Google Drive for quick setup.
-
-Reporting:
-
-ReportLab: For generating high-quality, detailed PDF reports that include the full analysis of each bottle.
-
-Getting Started
-To run this project locally or deploy it in your environment, follow these steps:
-
-1. Clone the Repository
-Clone the repository to your local machine or cloud environment:
+Clone the repository:
 
 bash
 Copy
 Edit
-git clone https://github.com/darshhv/AI-Powered-Product-Analysis-Dashboard.git
+git clone https://github.com/<your-username>/AI-Powered-Product-Analysis-Dashboard.git
 cd AI-Powered-Product-Analysis-Dashboard
-2. Install Dependencies
-Ensure that you have Python 3.x installed and the necessary libraries via pip. Run the following command to install the required dependencies:
+Install dependencies:
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-This will install all the necessary libraries for model training, image processing, data manipulation, and the web application.
-
-3. Set Up OpenAI API Key
-To integrate the AI-powered assistant, you’ll need an OpenAI API key. Obtain the API key by signing up at OpenAI and set it in your environment variables or directly in the code as follows:
-
-python
-Copy
-Edit
-openai.api_key = "your-openai-api-key"
-4. Download Pre-trained Models
-To download the necessary pre-trained models, run:
-
-bash
-Copy
-Edit
-python download_models.py
-This will download the model weights from a pre-configured Google Drive link using the gdown package.
-
-5. Run the Application
-Launch the web dashboard by running:
+Run the Streamlit app:
 
 bash
 Copy
 Edit
 streamlit run app.py
-This will start the application locally. Open your browser and navigate to http://localhost:8501 to access the dashboard.
-
-User Guide
-1. Uploading a Bottle Image
-Once the dashboard is running, go to the Upload & Predict section, where you can upload an image of the bottle you wish to analyze. The image will be processed and classified into various attributes.
-
-2. Real-Time Prediction and Confidence Scores
-After uploading the image, the dashboard will display the classification results for each category (e.g., Master Category, Subtype, Functional Factors) along with confidence scores represented as percentages.
-
-3. Comparison of Bottles
-To compare two bottles, navigate to the Compare Bottles section. Upload two images, and the system will provide side-by-side analysis, helping you evaluate the differences.
-
-4. Querying the AI Assistant
-In the Chat with AI section, you can interact with the AI-powered assistant. Ask questions related to the bottle's features or design, and the system will generate expert-level responses in real-time.
-
-5. PDF Report Generation
-After predictions are made, you can download the results as a PDF by clicking the Generate Report button. This will provide a detailed, formatted analysis for the uploaded bottle.
-
-Model Training
-The underlying deep learning model for image classification is based on Convolutional Neural Networks (CNNs), which are trained on a comprehensive dataset of bottle images. The model is fine-tuned for each category and factor to ensure accurate predictions. You can re-train or modify the models if needed by following the instructions in the Model Training section of this repository.
-
-Architecture
-The application follows a modular architecture, consisting of the following components:
-
-Front-end (Streamlit): The interactive web interface that allows users to interact with the system, upload images, view predictions, and communicate with the AI assistant.
-
-Back-end (TensorFlow/Keras): The machine learning models that handle classification tasks.
-
-API Layer (OpenAI GPT-3.5): Powers the chatbot functionality, offering responses based on predefined and dynamically generated knowledge.
-
-Database (Local Files): Stores models, predictions, and other necessary data.
-
-Folder Structure
-bash
-Copy
-Edit
-AI-Powered-Product-Analysis-Dashboard/
-│
-├── app.py                # Streamlit application to launch the dashboard
-├── download_models.py    # Script to download pre-trained models from Google Drive
-├── models/               # Directory to store trained models
-├── requirements.txt      # File listing all Python dependencies
-├── assets/               # Image and other resource files
-├── reports/              # Folder for generated PDF reports
-└── README.md             # This README file
 Contribution
-We welcome contributions to this project! Here’s how you can get involved:
-
-Report Issues: If you find bugs or limitations, open an issue in the GitHub repository.
-
-Submit Pull Requests: If you’d like to contribute code, please fork the repository, make your changes, and create a pull request.
-
-Feature Requests: If you have suggestions for new features, feel free to open an issue with the label “feature request.”
+This project is open to contributions! If you have suggestions for new features, improvements, or fixes, feel free to open an issue or create a pull request.
 
 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
 
 Acknowledgements
-This project was made possible by the following open-source tools and libraries:
-
-TensorFlow and Keras for deep learning model development
-
-Streamlit for creating the web application
-
-OpenAI GPT-3.5 for the AI-powered assistant functionality
-
-gdown for downloading models from Google Drive
-
-ReportLab for generating high-quality PDF reports
-
-Contact Information
-For any inquiries, collaboration opportunities, or support requests, please contact:
-
-Email: [dharsxn46@gmail.com]
-
-GitHub: https://github.com/darshhv
-
-Thank you for using the AI-Powered Product Analysis Dashboard! 
+Special thanks to Dr. Rajath Desai and Mr. Puneet K for their invaluable guidance during my internship at the Indian Institute of Science (IISc). Without their mentorship, this project wouldn't have been possible.

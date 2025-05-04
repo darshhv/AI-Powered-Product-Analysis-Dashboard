@@ -11,6 +11,7 @@ import io
 import os
 import time
 from datetime import datetime
+import gdown  # added gdown import
 
 # Optional: for advanced visualization
 import cv2
@@ -43,7 +44,27 @@ section = st.sidebar.radio("Go to", [
 @st.cache_resource
 def load_all_models():
     try:
-        # Correct file paths to load the models
+        # Ensure models/ folder exists
+        os.makedirs("models", exist_ok=True)
+
+        # Mapping of model names to Google Drive file IDs
+        model_files = {
+            "MasterCategories_model.keras": "19JTau3vko39Bs8fDDEUlA7VGri1p-9Gk"
+            "Subtypes_model.keras": "1s7A7S5bjm4toSCZNhkTcG8w7J6OrHvQ-"
+            "MorphologicalFeatures_model.keras": "1v63XBBN6H11p0ZcbTVbpFegD7SOsvHE4"
+            "FunctionalFactors_model.keras": "1NfqRYKlTMDpEOgQ_vij8YCNfRN6UO4qU"
+            "RealWorldUsage_model.keras": "1-kSSr7QwCzwP0Djbf8adxQpnHH58qaWU"  
+        }
+
+        # Download each model if it doesn’t exist
+        for filename, file_id in model_files.items():
+            filepath = os.path.join("models", filename)
+            if not os.path.exists(filepath):
+                url = f"https://drive.google.com/uc?id={file_id}"
+                print(f"Downloading {filename} from Google Drive...")
+                gdown.download(url, filepath, quiet=False)
+
+        # Load the models
         return {
             "master": load_model("models/MasterCategories_model.keras"),
             "subtype": load_model("models/Subtypes_model.keras"),

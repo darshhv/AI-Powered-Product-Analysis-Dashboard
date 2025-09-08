@@ -205,4 +205,5 @@ elif section == "Feedback Form":
 
 # ---------------------------- FOOTER ----------------------------
 st.markdown("---")
-st.caption("AI-Powered Dashboard by Darshan Reddy • © 2025")
+st.caption("AI-Powered Dashboard by Siri Sinchana and Darshan Reddy - IISc Bengaluru • © 2025")
+
